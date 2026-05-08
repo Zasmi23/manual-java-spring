@@ -1,5 +1,4 @@
 
-
 \chapter{Tecnología de Java}
 
 
@@ -36,7 +35,7 @@ Hoy en día, Java sigue siendo uno de los lenguajes más importantes del mundo, 
 Es un software que emula una maquina real, es una maquina virtual que finge ser una maquina real dentro de la verdadera maquina real, suena redundante pero así funciona la JVM o en parte, el único propósito de este ultimo es simplemente ejecutar programas en Java. Gracia a JVM podemos compilar nuestros codigos de Java en muchos sistemas operativos porque esta maquina virtual es independiente a sistema, debido a que este genera Bytecode, que es el lenguaje que entiende el JVM.
 
 \subsection{Garbage Collection}
-El Garbage Collection se traduciría directamente como recolector de basura, empezare desde el principio: Cuando un programador escribe su codigo mediante un lenguaje este ultimo no es entendible por la maquina, se requiere de un proceso de compilado para que el lenguaje de programación se transforme a uno que entiende la maquina, osea en binario. Cada vez que haces un programa se asigna un bloque de memoria de tu código para luego ser ejecutado. Los lenguajes se manejan en niveles, de alto a bajo. \textbf{Mientras mas alto sea el nivel mas tardado es el tiempo de ejecución de tu programa}, Java es un lenguaje de alto nivel, es decir, es su sintaxis muy cercana al lenguaje humano, algo que en C no es así. \\
+El Garbage Collection se traduciría directamente como recolector de basura, empezare desde el principio: Cuando un programador escribe su codigo mediante un lenguaje este ultimo no es entendible por la maquina, se requiere de un proceso de compilado para que el lenguaje de programación se transforme a uno que entiende la maquina, osea en binario. Cada vez que haces un programa se asigna un bloque de memoria de tu código para luego ser ejecutado. Los lenguajes se manejan en niveles, de alto a bajo. \textbf{Mientras mas alto sea el nivel mas tardado es el tiempo de ejecución de tu programa}, Java es un lenguaje de alto nivel, es decir, es su sintaxis muy cercana al lenguaje humano, algo que en C no es así.
 
 Los lenguajes como C o C++ te permiten usar memoria dinámica, usarla es de mucho cuidado porque puedes dejar bloques de memoria utilizados que para borrarlos resulta difícil o hasta imposible porque en las computadoras modernas existe una cantidad gigante de bloques de memoria. Java te permite quitarte ese peso pues gracias al Garbage Collection este desocupa los bloques de memoria que ya no utilice tu programa.
 
@@ -44,19 +43,18 @@ Los lenguajes como C o C++ te permiten usar memoria dinámica, usarla es de much
 
 Esta sección dejare un diagrama de como corre un programa en java. 
 
-\begin{figure}[htbp]
+\begin{figure}[ht] % Entorno flotante para posicionar
+	
 	\centering
-	\includegraphics[width=0.8\textwidth]{Imagenes/Diagrama de JVM.png}
-	\caption{Diagrama de JVM.}
-	\label{fig:diagrama_base}
+	\includegraphics[width=0.5\textwidth]{capitulos/capitulo 1/Imagenes/jvm.png}
 \end{figure}
-
-Los archivos java son compilados y estos se transforman en Bytecodes pasa hacer archivos de tipo Class, luego el Bytecode es cargado en la memoria y se verifica que el código este en orden, es decir, evita errores de acceso ilegal de memoria o código corrupto, después se interpreta ejecutando linea por linea el Bytecode, pero al mismo tiempo JIT (Just-in-time Compiler), convierte el Bytecode en código maquina para mayor velocidad y el Garbage Collection se ejecuta en tiempo real para gestionar la memoria y así corre en tu Hardaware.\\
+Los archivos java son compilados y estos se transforman en Bytecodes pasa hacer archivos de tipo Class, luego el Bytecode es cargado en la memoria y se verifica que el código este en orden, es decir, evita errores de acceso ilegal de memoria o código corrupto, después se interpreta ejecutando linea por linea el Bytecode, pero al mismo tiempo JIT (Just-in-time Compiler), convierte el Bytecode en código maquina para mayor velocidad y el Garbage Collection se ejecuta en tiempo real para gestionar la memoria y así corre en tu Hardaware.
 
 \section{Primeros pasos de Java}
 
-En la fecha de hoy 3 de abril del 2026, uso como IDE a \textbf{VS Code} (Visual Studio Code), elegí este esta herramienta porque es ligera, muy flexible a extensiones y lo que me interesa y mas me gusta es que multilenguaje, la única desventaja es instalar las extensiones, pero mas adelante les daré para mi las mejore extensiones para programar en Java.\\
-Tambien quiero mencionar otras IDE que son igual de buenas y merecen ser mencionadas: \textbf{IntelliJ IDEA} muy usada en la industria y desarrolladores de Java, \textbf{Eclipse} tiene la ventaja de ser muy personalizable para hacer código y \textbf{Apache NetBeans} muy amigable y facil de utilizar, no necesita instalar plugins.\\
+En la fecha de hoy 3 de abril del 2026, uso como IDE a \textbf{VS Code} (Visual Studio Code), elegí este esta herramienta porque es ligera, muy flexible a extensiones y lo que me interesa y mas me gusta es que multilenguaje, la única desventaja es instalar las extensiones, pero mas adelante les daré para mi las mejore extensiones para programar en Java.
+
+Tambien quiero mencionar otras IDE que son igual de buenas y merecen ser mencionadas: \textbf{IntelliJ IDEA} muy usada en la industria y desarrolladores de Java, \textbf{Eclipse} tiene la ventaja de ser muy personalizable para hacer código y \textbf{Apache NetBeans} muy amigable y facil de utilizar, no necesita instalar plugins.
 
 Java tiene la ventaja de poderse instalar en multiples sistemas operativos, en mi caso uso Linux y como distribuidor Ubuntu en su versión 25.04, sin embargo también para los que vienen de Windows. Recomiendo que instalen VS Code y JDK (Java Development Kit) en la computadora que trabajes.
 
