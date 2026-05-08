@@ -15,4 +15,9 @@
 *.synctex.gz
 *.bbl
 *.blg
+*.maf
+*.mtc
+*.mtc*
+
+
 
