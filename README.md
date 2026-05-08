@@ -8,3 +8,9 @@ Este repositorio contiene un manual en LaTeX y ejemplos de código práctico ori
 * `/codigo-java`: Ejercicios, clases y proyectos prácticos.
 
 **Próximos pasos en el desarrollo (2-3 años):** Depues de concluir esta manual se hablara de una implementacion con BD, Microcontroladores ESP32, C++, Protocolos HTPP y MQTT, este manual solo es el punto de partida para lo antes mencionado.
+
+# De lo basico de Java a Spring
+
+** [HAZ CLIC AQUI PARA DESCARGA LA ULTIMA VERSION DEL MANUAL EN PDF](https://github.com/Zasmi23/manual-java-spring/releases/latest) **
+
+ESte repositorio contiene un manual en Latex y ejemplos
